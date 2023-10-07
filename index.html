@@ -1,0 +1,946 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="main">
+      <div id="nav">
+        <div id="nav-part1">
+            <svg height="25" viewBox="0 0 36.289 20.768" alt="Logo" class="_10c831ef"><path d="M18.9 20.77V0h4.93v20.77zM0 10.39a8.56 8.56 0 1 1 8.56 8.56A8.56 8.56 0 0 1 0 10.4zm5.97-.01a2.6 2.6 0 1 0 2.6-2.6 2.6 2.6 0 0 0-2.6 2.6zm27 5.2l-1.88-1.87-1.87 1.88H25.9V12.3l1.9-1.9-1.9-1.89V5.18h3.27l1.92 1.92 1.93-1.92h3.27v3.33l-1.9 1.9 1.9 1.9v3.27z"></path></svg>
+            <svg width="88.9" height="33" xmlns="http://www.w3.org/2000/svg" alt="OLX Motors" class="_1a6eed8f"><defs><linearGradient id="a" x1=".5" x2=".5" y2="1" gradientUnits="objectBoundingBox"><stop offset="0" stop-color="#ddd"></stop><stop offset="1" stop-color="#fff"></stop></linearGradient></defs><path stroke="rgba(0,0,0,0)" d="M40 20.5h1v-6.2l3 6.2h.6l2.8-6.2v6.2h1v-8.3h-1L44.1 19l-3-6.8H40zm18.3-4.2A4.1 4.1 0 0 0 54 12a4.1 4.1 0 0 0-4.2 4.3 4.1 4.1 0 0 0 4.2 4.3 4.1 4.1 0 0 0 4.2-4.3zm-7.3 0a3 3 0 0 1 3-3.3 3 3 0 0 1 3.2 3.3 3 3 0 0 1-3 3.3 3 3 0 0 1-3.2-3.3zm8.2-3.3h2.3v7.5h1V13H65v-1h-5.7zm15 3.3A4.1 4.1 0 0 0 70 12a4.1 4.1 0 0 0-4.2 4.3 4.1 4.1 0 0 0 4.2 4.3 4.1 4.1 0 0 0 4.2-4.3zm-7.2 0a3 3 0 0 1 3-3.3 3 3 0 0 1 3 3.3 3 3 0 0 1-3 3.3 3 3 0 0 1-3-3.3zm13.2-1.7c0 1-.6 1.6-1.8 1.6h-1.6V13h1.6c1.2 0 1.8.6 1.8 1.6zM75.7 12v8.4h1V17H78l2 3.4h1.3l-2-3.5a2.4 2.4 0 0 0 2-2.4c0-1.4-1-2.5-3-2.5zm12.7 6c0-3-4.5-1.7-4.5-3.8 0-1 .7-1.4 1.6-1.4a1.5 1.5 0 0 1 1.6 1.2h1.2a2.5 2.5 0 0 0-2.7-2.1c-1.7 0-2.8 1-2.8 2.3 0 3 4.5 1.7 4.5 4 0 .7-.6 1.3-1.7 1.3a1.5 1.5 0 0 1-1.7-1.4h-1.2c0 1.4 1.3 2.4 3 2.4a2.5 2.5 0 0 0 2.7-2.4z"></path><path fill="url(#a)" d="M0 16.5a16.5 16.5 0 1 1 33 0 16.5 16.5 0 0 1-33 0z" opacity=".6"></path><path d="M24.7 13.5a1.1 1.1 0 0 0-1.4-.7l-.6.2-1-2.2-.4-.1a16 16 0 0 0-4.8-.7 12 12 0 0 0-4.3.7l-.3.1-1 2.3h-.5a1.1 1.1 0 0 0-.6 2v.2a4 4 0 0 0-.4 1.5v4a2.1 2.1 0 0 0 0 .6.7.7 0 0 0 .8.5h1.6a.7.7 0 0 0 .8-.5 2.1 2.1 0 0 0 0-.7v-.3a47.1 47.1 0 0 0 8.3 0v.3a2.1 2.1 0 0 0 0 .7.7.7 0 0 0 .8.5h1.6a.7.7 0 0 0 .7-.5 2.1 2.1 0 0 0 .1-.7v-4a3.7 3.7 0 0 0-.4-1.5V15h.3a1.1 1.1 0 0 0 .7-1.5zm-12.2-2.1a11.3 11.3 0 0 1 4-.6 15.2 15.2 0 0 1 4.6.6l.9 1.8a17.6 17.6 0 0 1-4.3.4H17a28.2 28.2 0 0 1-5.4-.3zm-.6 9.3a2.2 2.2 0 0 1 0 .4h-1.7a2.2 2.2 0 0 1 0-.4V20a1 1 0 0 0 .3 0l1.4.2v.4zm11.4 0a2.2 2.2 0 0 1 0 .4h-1.6a2.2 2.2 0 0 1 0-.4v-.4H23a1 1 0 0 0 .4-.2zm.5-6.5l-1.2.4.5 1a3 3 0 0 1 .3 1.2V18l-.1.7c0 .3-.2.7-.5.7-3 .3-4.5.5-6 .5s-3-.2-6.2-.5c-.2 0-.3-.3-.4-.6V18a17 17 0 0 1 0-1 3.2 3.2 0 0 1 .3-1.3l.5-1-1-.2a.3.3 0 0 1-.2-.4.3.3 0 0 1 .4-.3l1.1.4a23.6 23.6 0 0 0 5 .3h1.4a17.9 17.9 0 0 0 4.6-.5h.3l1-.4a.3.3 0 0 1 .4.3.3.3 0 0 1-.2.4z"></path><path d="M12 16a1.2 1.2 0 1 0 1.1 1.2A1.2 1.2 0 0 0 12 16zm0 1.6a.4.4 0 1 1 .3-.4.4.4 0 0 1-.4.4zm9.6-1.6a1.2 1.2 0 1 0 1.2 1.2 1.2 1.2 0 0 0-1.2-1.2zm0 1.6a.4.4 0 1 1 .5-.4.4.4 0 0 1-.5.4zm-7.8.2h6v.8h-6z"></path></svg>
+            <svg width="97.25" height="33" xmlns="http://www.w3.org/2000/svg" alt="OLX Property" class="_1a6eed8f"><defs><linearGradient id="a" x1=".5" x2=".5" y2="1" gradientUnits="objectBoundingBox"><stop offset="0" stop-color="#ddd"></stop><stop offset="1" stop-color="#fff"></stop></linearGradient></defs><path stroke="rgba(0,0,0,0)" d="M41.1 16.64v-3.07h1.6c1.25 0 1.78.58 1.78 1.55 0 .94-.53 1.52-1.78 1.52zm4.5-1.52c0-1.37-.93-2.45-2.9-2.45H40v8.36h1.1v-3.49h1.6c2.08 0 2.9-1.15 2.9-2.42zm5.82.01c0 .94-.54 1.6-1.77 1.6h-1.6v-3.16h1.6c1.25 0 1.77.61 1.77 1.57zm-4.47-2.46v8.36h1.1v-3.42h1.31l2 3.42h1.3l-2.1-3.5a2.36 2.36 0 0 0 2-2.4c0-1.36-.94-2.45-2.9-2.45zm15.3 4.18a4.12 4.12 0 0 0-4.2-4.28 4.13 4.13 0 0 0-4.2 4.28 4.13 4.13 0 0 0 4.2 4.27 4.12 4.12 0 0 0 4.2-4.27zm-7.3 0a3.05 3.05 0 0 1 3.1-3.33 3.05 3.05 0 0 1 3.07 3.33 3.06 3.06 0 0 1-3.08 3.32 3.06 3.06 0 0 1-3.09-3.32zm9.82-.2v-3.08h1.6c1.25 0 1.78.58 1.78 1.55 0 .94-.53 1.52-1.77 1.52zm4.5-1.53c0-1.36-.93-2.44-2.9-2.44h-2.7v8.35h1.1v-3.49h1.6c2.08 0 2.9-1.15 2.9-2.42zm5.85-2.46h-4.5v8.37h4.5v-.9h-3.4v-2.88h3.04v-.9h-3.04v-2.8h3.4zm6.14 2.48c0 .93-.54 1.6-1.78 1.6h-1.6v-3.17h1.6c1.25 0 1.78.61 1.78 1.57zm-4.48-2.47v8.36h1.1v-3.42h1.32l1.98 3.42h1.3l-2.1-3.5a2.36 2.36 0 0 0 2-2.4c0-1.36-.94-2.45-2.9-2.45zm6.78.9h2.29v7.46h1.1v-7.47h2.27v-.89h-5.66zm9.04 4.3v3.16h1.1v-3.15l2.72-5.2h-1.2l-2.07 4.23-2.07-4.24h-1.2z"></path><path fill="url(#a)" d="M0 16.5a16.5 16.5 0 1 1 33 0 16.5 16.5 0 0 1-33 0z" opacity=".57"></path><path d="M25.03 21.92v-9.35l-4.99-1.66v1.05l4 1.33v8.59h-5V7.85h-8.38v14.08h-.4v1h15.17v-1zm-6.98-11.68v11.68h-6.4V8.84h6.4z"></path><path d="M15.17 10.3h1.61v.8h-1.6zm-2.42 0h1.6v.8h-1.6zm2.42 1.6h1.61v.81h-1.6zm-2.42 0h1.6v.81h-1.6zm2.42 2.42h1.61v.81h-1.6zm-2.42 0h1.6v.81h-1.6zm2.42 1.62h1.61v.8h-1.6zm-2.42 0h1.6v.8h-1.6zm2.42 2.42h1.61v.8h-1.6zm-2.42 0h1.6v.8h-1.6zm8.87-4.04h.8v.81h-.8zm-1.62 0h.8v.81H20zm1.62 1.62h.8v.8h-.8zm-1.62 0h.8v.8H20zm1.62 2.42h.8v.8h-.8zm-1.62 0h.8v.8H20z"></path></svg>
+        </div>
+        <div id="nav-part2">
+        <div id="part1">
+            <svg height="40" viewBox="0 0 36.289 20.768" alt="Logo" class="b28a1eb6"><path d="M18.9 20.77V0h4.93v20.77zM0 10.39a8.56 8.56 0 1 1 8.56 8.56A8.56 8.56 0 0 1 0 10.4zm5.97-.01a2.6 2.6 0 1 0 2.6-2.6 2.6 2.6 0 0 0-2.6 2.6zm27 5.2l-1.88-1.87-1.87 1.88H25.9V12.3l1.9-1.9-1.9-1.89V5.18h3.27l1.92 1.92 1.93-1.92h3.27v3.33l-1.9 1.9 1.9 1.9v3.27z"></path></svg>
+        </div>
+        <div id="part2">
+            <div class="dropdown">
+                <button class="dropbtn"><i class="ri-search-line"></i>Pakistan<i class="ri-arrow-down-s-line icon2"></i></button>
+                <div class="dropdown-content">
+                  <a id="link1" target="_blank" href="https://www.google.com/maps/@37.0625,-95.677068,4z?entry=ttu"><i class="ri-compass-discover-line"></i>Use current location</a>
+                  <a id="link2" href="#"><i class="ri-map-pin-line"></i>See ads in all Pakistan</a>
+                 <h4>Choose Region</h4>
+                 <a class="location" href=""><i class="ri-map-pin-line"></i>Azad Kashmir, Pakistan</a>
+                 <a class="location" href=""><i class="ri-map-pin-line"></i>Balochistan, Pakistan</a>
+                 <a class="location" href=""><i class="ri-map-pin-line"></i>Islamabad Capital Territory, Pakistan</a>
+                 <a class="location" href=""><i class="ri-map-pin-line"></i>Khyber Pakhtunkhwa, Pakistan</a>
+                 <a class="location" href=""><i class="ri-map-pin-line"></i>Northern Areas, Pakistan</a>
+                 <a class="location" href=""><i class="ri-map-pin-line"></i>Punjab, Pakistan</a>
+                 <a class="location" href=""><i class="ri-map-pin-line"></i>Sindh, Pakistan</a>
+                </div>
+              </div>
+              <div id="input">
+                <input type="search" placeholder="Find Cars, Mobile Phones and more...">
+                <i class="ri-search-line"></i>
+              </div>
+        </div>
+        <div id="part3">
+            <a href="">Login</a>
+            <div id="btn-div">
+            <a href="" id="btn2"><i class="ri-add-line"></i>Sell</a>
+            <img src="https://www.olx.com.pk/assets/iconSellBorder_noinline.d9eebe038fbfae9f90fd61d971037e02.svg" alt="">
+            </div>
+        </div>            
+        </div>
+      </div>
+    <div class="menu">
+        <ul>
+          <li class="dropdown dropdown2">
+            <a href="#">All categories<i class="ri-arrow-down-s-line icon2"></i></a>
+            <div class="dropdown-content dropdown-content2">
+              <div class="drop-inner">
+              <div class="category">
+                <h3>Mobile Phones</h3>
+                <ul>
+                  <li><a href="#">Apple</a></li>
+                  <li><a href="#">Samsung</a></li>
+                  <li><a href="#">Google</a></li>
+                  <!-- Add more mobile brands -->
+                </ul>
+              </div>
+              <div class="category">
+                <h3>Cars</h3>
+                <ul>
+                  <li><a href="#">Toyota</a></li>
+                  <li><a href="#">Honda</a></li>
+                  <li><a href="#">Nissan</a></li>
+                  <!-- Add more car brands -->
+                </ul>
+              </div>
+              <div class="category">
+                <h3>Bikes</h3>
+                <ul>
+                  <li><a href="#">Yamaha</a></li>
+                  <li><a href="#">Suzuki</a></li>
+                  <li><a href="#">Kawasaki</a></li>
+                  <!-- Add more bike brands -->
+                </ul>
+              </div>
+              <div class="category">
+                <h3>Furniture</h3>
+                <ul>
+                  <li><a href="#">Tables</a></li>
+                  <li><a href="#">Chairs</a></li>
+                  <li><a href="#">Sofas</a></li>
+                  <!-- Add more furniture items -->
+                </ul>
+              </div>  
+              <div class="category">
+                <h3>Fashion</h3>
+                <ul>
+                  <li><a href="#">Clothing</a></li>
+                  <li><a href="#">Shoes</a></li>
+                  <li><a href="#">Accessories</a></li>
+                  <!-- Add more fashion items -->
+                </ul>
+              </div>
+              <div class="category">
+                <h3>Sports & Outdoors</h3>
+                <ul>
+                  <li><a href="#">Outdoor Recreation</a></li>
+                  <li><a href="#">Fitness Equipment</a></li>
+                  <li><a href="#">Sports Apparel</a></li>
+                  <!-- Add more sports and outdoors items -->
+                </ul>
+              </div>
+              <div class="category">
+                <h3>Electronics</h3>
+                <ul>
+                  <li><a href="#">Computers & Laptops</a></li>
+                  <li><a href="#">Cameras & Photography</a></li>
+                  <li><a href="#">Audio & Headphones</a></li>
+                  <!-- Add more electronics items -->
+                </ul>
+              </div>
+                                                                                  
+              <!-- Add more category divs as needed -->
+            </div>
+              <div class="drop-inner">
+                <div class="category">
+                  <h3>Services</h3>
+                  <ul>
+                    <li><a href="#">Cleaning Services</a></li>
+                    <li><a href="#">Home Repair & Maintenance</a></li>
+                    <li><a href="#">Event Planning</a></li>
+                    <li><a href="#">Tutoring & Lessons</a></li>
+                    <li><a href="#">Health & Beauty Services</a></li>
+                    <li><a href="#">Financial & Legal Services</a></li>
+                    <!-- Add more service items -->
+                  </ul>
+                </div>
+                
+                <div class="category">
+                  <h3>Jobs</h3>
+                  <ul>
+                    <li><a href="#">Full-Time Jobs</a></li>
+                    <li><a href="#">Part-Time Jobs</a></li>
+                    <li><a href="#">Freelance Jobs</a></li>
+                    <li><a href="#">Internships</a></li>
+                    <li><a href="#">Work From Home</a></li>
+                    <li><a href="#">Government Jobs</a></li>
+                    <!-- Add more job categories -->
+                  </ul>
+                </div>
+                
+                <div class="category">
+                  <h3>Cosmetics</h3>
+                  <ul>
+                    <li><a href="#">Makeup</a></li>
+                    <li><a href="#">Skincare</a></li>
+                    <li><a href="#">Haircare</a></li>
+                    <li><a href="#">Fragrances</a></li>
+                    <li><a href="#">Beauty Tools & Accessories</a></li>
+                    <li><a href="#">Men's Grooming</a></li>
+                    <!-- Add more cosmetics items -->
+                  </ul>
+                </div>
+                
+                <div class="category">
+                  <h3>Gadgets</h3>
+                  <ul>
+                    <li><a href="#">Smartphones</a></li>
+                    <li><a href="#">Tablets & E-readers</a></li>
+                    <li><a href="#">Wearable Technology</a></li>
+                    <li><a href="#">Home Appliances</a></li>
+                    <li><a href="#">Camera & Photography</a></li>
+                    <li><a href="#">Audio & Headphones</a></li>
+                    <!-- Add more gadget items -->
+                  </ul>
+                </div>
+                 
+                <div class="category">
+                  <h3>Kids</h3>
+                  <ul>
+                    <li><a href="#">Toys & Games</a></li>
+                    <li><a href="#">Baby Gear</a></li>
+                    <li><a href="#">Kids' Clothing</a></li>
+                    <li><a href="#">Books & Learning</a></li>
+                    <li><a href="#">Kids' Furniture</a></li>
+                    <li><a href="#">Strollers & Carriers</a></li>
+                    <!-- Add more kids items -->
+                  </ul>
+                </div>
+                
+              <div class="category">
+                <h3>Sports & Outdoors</h3>
+                <ul>
+                  <li><a href="#">Outdoor Recreation</a></li>
+                  <li><a href="#">Fitness Equipment</a></li>
+                  <li><a href="#">Sports Apparel</a></li>
+                  <!-- Add more sports and outdoors items -->
+                </ul>
+              </div>
+              <div class="category">
+                <h3>Sports</h3>
+                <ul>
+                  <li><a href="#">Fitness Equipment</a></li>
+                  <li><a href="#">Outdoor Sports</a></li>
+                  <li><a href="#">Team Sports</a></li>
+                  <li><a href="#">Athletic Apparel</a></li>
+                  <li><a href="#">Golf Equipment</a></li>
+                  <li><a href="#">Hiking & Camping</a></li>
+                  <!-- Add more sports items -->
+                </ul>
+              </div>
+              
+                                                                                  
+              <!-- Add more category divs as needed -->
+            </div>
+            </div>
+          </li>
+          <li><a href="#">Mobile Phones</a></li>
+          <li><a href="#">Cars</a></li>
+          <li><a href="#">Motorcycles</a></li>
+          <li><a href="#">Houses</a></li>
+          <li><a href="#">TV-Audio-Video</a></li>
+          <li><a href="#">Tablets</a></li>
+          <li><a href="#">Land & Plots</a></li>
+        </ul>
+      </div>
+      <div id="swiper-div">
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"></div>
+            <div class="swiper-slide"></div>
+            <div class="swiper-slide"></div>
+          </div>
+        </div>
+      </div>
+
+      <div id="circle-div">
+        <h1>All categories</h1>
+        <div class="items">
+        <div class="circles">
+          <div class="img img1"></div>
+          <div class="text"><h3>Mobiles</h3></div>
+        </div>
+
+        <div class="circles">
+          <div class="img img2"></div>
+          <div class="text"><h3>Vehicles</h3></div>
+        </div>
+
+        <div class="circles">
+          <div class="img img3"></div>
+          <div class="text"><h3>Property For Sale</h3></div>
+        </div>
+
+        <div class="circles">
+          <div class="img img4"></div>
+          <div class="text"><h3>Property For <br>Rent</h3></div>
+        </div>
+
+        <div class="circles">
+          <div class="img img5"></div>
+          <div class="text"><h3>Electronics & <br>Home Appliances</h3></div>
+        </div>
+
+        <div class="circles">
+          <div class="img img6"></div>
+          <div class="text"><h3>Bikes</h3></div>
+        </div>
+
+        <div class="circles">
+          <div class="img img7"></div>
+          <div class="text"><h3>Business, <br>Industrial & Agriculture</h3></div>
+        </div>
+
+        <div class="circles">
+          <div class="img img8"></div>
+          <div class="text"><h3>Services</h3></div>
+        </div>
+
+        <div class="circles">
+          <div class="img img9"></div>
+          <div class="text"><h3>Jobs</h3></div>
+        </div>
+ </div>
+
+        <div class="items">
+        <div class="circles">
+          <div class="img img10"></div>
+          <div class="text"><h3>Animals</h3></div>
+        </div>
+
+        <div class="circles">
+          <div class="img img11"></div>
+          <div class="text"><h3>Furniture & <br>Home Decor</h3></div>
+        </div>
+
+        <div class="circles">
+          <div class="img img12"></div>
+          <div class="text"><h3>Fashion & <br>Beauty</h3></div>
+        </div>
+
+        <div class="circles">
+          <div class="img img13"></div>
+          <div class="text"><h3>Books, Sports <br>& Hobbies</h3></div>
+        </div>
+
+        <div class="circles">
+          <div class="img img14"></div>
+          <div class="text"><h3>Kids</h3></div>
+        </div>
+
+      </div>
+      </div>
+
+      <div class="card-head">
+        <h1>Mobile Phones</h1>
+      </div>
+      <div class="card-section">
+        <div class="card-div">
+          <div class="card card1">
+            <div class="img"></div>
+            <div class="content">
+              <div class="content1">
+                <h3>Rs 9,500</h3>
+                <i class="ri-heart-3-line"></i>
+              </div>
+              <div class="content2"><h3>Oppo A57 4/64</h3></div>
+              <div class="content3">
+                <h4>Hall Road, Lahore</h4>
+                <p>1 week ago</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="card card2">
+            <div class="img"></div>
+            <div class="content">
+              <div class="content1">
+                <h3>Rs 99,999</h3>
+                <i class="ri-heart-3-line"></i>
+              </div>
+              <div class="content2"><h3>Iphone 11 pro max 64gb</h3></div>
+              <div class="content3">
+                <h4>Mochipura Morr, Lahore</h4>
+                <p>23 hours ago</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="card card3">
+            <div class="img"></div>
+            <div class="content">
+              <div class="content1">
+                <h3>Rs 228,000</h3>
+                <i class="ri-heart-3-line"></i>
+              </div>
+              <div class="content2"><h3>13 pro max</h3></div>
+              <div class="content3">
+                <h4>Main Boulevard Gulberg, Lahore</h4>
+                <p>1 week ago</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="card card4">
+            <div class="img"></div>
+            <div class="content">
+              <div class="content1">
+                <h3>Rs 102,000</h3>
+                <i class="ri-heart-3-line"></i>
+              </div>
+              <div class="content2"><h3>Samsung s21 Ultra - S22 Ultra- S21 Plus -S21 FE - S22 Plus- Note 20</h3></div>
+              <div class="content3">
+                <h4>Hall Road, Lahore</h4>
+                <p>1 week ago</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="card-head">
+        <h1>Cars</h1>
+      </div>
+      <div class="card-section">
+        <div class="card-div">
+          <div class="card card5">
+            <div class="img"></div>
+            <div class="content">
+              <div class="content1">
+                <h3>Rs 1,500,000</h3>
+                <i class="ri-heart-3-line"></i>
+              </div>
+              <div class="content2"><h3>Honda Civic 2005 Exi Prosmatic</h3></div>
+              <div class="content3">
+                <h4>TECH Town (TNT Colony), Faisalabad</h4>
+                <p>2 days ago</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="card card6">
+            <div class="img"></div>
+            <div class="content">
+              <div class="content1">
+                <h3>Rs 2,525,000</h3>
+                <i class="ri-heart-3-line"></i>
+              </div>
+              <div class="content2"><h3>Invoice 2018 December for urgent sales</h3></div>
+              <div class="content3">
+                <h4>Buffer Zone 2, Karachi</h4>
+                <p>3 days ago</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="card card7">
+            <div class="img"></div>
+            <div class="content">
+              <div class="content1">
+                <h3>Rs 3,400,000</h3>
+                <i class="ri-heart-3-line"></i>
+              </div>
+              <div class="content2"><h3>Honda city Asphire 2017 Model</h3></div>
+              <div class="content3">
+                <h4>Shahdara, Lahore</h4>
+                <p>3 week ago</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="card card8">
+            <div class="img"></div>
+            <div class="content">
+              <div class="content1">
+                <h3>Rs 4,500,000</h3>
+                <i class="ri-heart-3-line"></i>
+              </div>
+              <div class="content2"><h3>Toyota Parado TZ 2001 Model 2007 Registration</h3></div>
+              <div class="content3">
+                <h4>Gharh Mahraja Road, Shorkot</h4>
+                <p>3 week ago</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="card-head">
+        <h1>Bikes & Motorcycles</h1>
+      </div>
+      <div class="card-section">
+        <div class="card-div">
+          <div class="card card9">
+            <div class="img"></div>
+            <div class="content">
+              <div class="content1">
+                <h3>Rs 159,000</h3>
+                <i class="ri-heart-3-line"></i>
+              </div>
+              <div class="content2"><h3>Honda 125 Model 2020 Sticker 2021 Red Fabulous luSsh condition</h3></div>
+              <div class="content3">
+                <h4>Samanabad, Lahore</h4>
+                <p>1 week ago</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="card card10">
+            <div class="img"></div>
+            <div class="content">
+              <div class="content1">
+                <h3>Rs 234,900</h3>
+                <i class="ri-heart-3-line"></i>
+              </div>
+              <div class="content2"><h3>Honda CG 125 / 2024 Model Zero Meter</h3></div>
+              <div class="content3">
+                <h4>Ferozepur Road, Lahore</h4>
+                <p>2 weeks ago</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="card card11">
+            <div class="img"></div>
+            <div class="content">
+              <div class="content1">
+                <h3>Rs 150,000</h3>
+                <i class="ri-heart-3-line"></i>
+              </div>
+              <div class="content2"><h3>Honda 125 Fresh condition</h3></div>
+              <div class="content3">
+                <h4>Walton Road, Lahore</h4>
+                <p>1 week ago</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="card card12">
+            <div class="img"></div>
+            <div class="content">
+              <div class="content1">
+                <h3>Rs 78,000</h3>
+                <i class="ri-heart-3-line"></i>
+              </div>
+              <div class="content2"><h3>Honda CG 125 Model 2007</h3></div>
+              <div class="content3">
+                <h4>Dhok Naju, Rawalpindi</h4>
+                <p>2 days ago</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      
+      <div class="card-head">
+        <h1>Houses</h1>
+      </div>
+      <div class="card-section">
+        <div class="card-div">
+          <div class="card card13">
+            <div class="img"></div>
+            <div class="content">
+              <div class="content1">
+                <h3>Rs 27,000,000</h3>
+                <i class="ri-heart-3-line"></i>
+              </div>
+              <div class="content2"><h3>8 MARLA HOUSE FOR SALE IN FAISAL TOWN BLOCK A</h3></div>
+              <div class="content3">
+                <h4>Faisal Town - F-18, Islamabad</h4>
+                <p>2 hours ago</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="card card14">
+            <div class="img"></div>
+            <div class="content">
+              <div class="content1">
+                <h3>Rs 12,000,000</h3>
+                <i class="ri-heart-3-line"></i>
+              </div>
+              <div class="content2"><h3>3 Years Installment Plus Cash Based 5 Marla Spanish House In Parkview</h3></div>
+              <div class="content3">
+                <h4>Park View Villas, Lahore</h4>
+                <p>4 hours ago</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="card card15">
+            <div class="img"></div>
+            <div class="content">
+              <div class="content1">
+                <h3>Rs 23,500,000</h3>
+                <i class="ri-heart-3-line"></i>
+              </div>
+              <div class="content2"><h3>5 Marla Corner Park Face Double Storey House</h3></div>
+              <div class="content3">
+                <h4>Faisal Town - F-18, Islamabad</h4>
+                <p>4 weeks ago</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="card card16">
+            <div class="img"></div>
+            <div class="content">
+              <div class="content1">
+                <h3>Rs 100,000,000</h3>
+                <i class="ri-heart-3-line"></i>
+              </div>
+              <div class="content2"><h3>House Available For sale In DHA Phase 2 - Sector D</h3></div>
+              <div class="content3">
+                <h4>DHA Phase 2 - Sector D, Islamabad</h4>
+                <p>2 weeks ago</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="card-head">
+        <h1>TV - Video - Audio</h1>
+      </div>
+      <div class="card-section">
+        <div class="card-div">
+          <div class="card card17">
+            <div class="img"></div>
+            <div class="content">
+              <div class="content1">
+                <h3>Rs 30,000</h3>
+                <i class="ri-heart-3-line"></i>
+              </div>
+              <div class="content2"><h3>DHAMAKA SALE LED TV 42" INCH SAMSUNG UHD ANDROID LED 2023</h3></div>
+              <div class="content3">
+                <h4>Federal B Area, Karachi</h4>
+                <p>4 weeks ago</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="card card18">
+            <div class="img"></div>
+            <div class="content">
+              <div class="content1">
+                <h3>Rs 19,500</h3>
+                <i class="ri-heart-3-line"></i>
+              </div>
+              <div class="content2"><h3>32 Smart led Tv Android limited Special offer 42" 48" 55" 65" 75" 85"</h3></div>
+              <div class="content3">
+                <h4>Rashid Minhas Road, Karachi</h4>
+                <p>3 weeks ago</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="card card19">
+            <div class="img"></div>
+            <div class="content">
+              <div class="content1">
+                <h3>Rs 39,000</h3>
+                <i class="ri-heart-3-line"></i>
+              </div>
+              <div class="content2"><h3>TOP QUALITY SAMSUNG MODELS 43 " SMART LATEST MODELS 2023 WITH WARANTY</h3></div>
+              <div class="content3">
+                <h4>Bahria Town, Lahore</h4>
+                <p>23 hours ago</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="card card20">
+            <div class="img"></div>
+            <div class="content">
+              <div class="content1">
+                <h3>Rs 26,000</h3>
+                <i class="ri-heart-3-line"></i>
+              </div>
+              <div class="content2"><h3>32" sony , Samsung , TCL , Latest slim Limited stock 03230900129</h3></div>
+              <div class="content3">
+                <h4>Chungi Amar Sadhu, Lahore</h4>
+                <p>2 weeks ago  </p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="card-head">
+        <h1>Tablets</h1>
+      </div>
+      <div class="card-section">
+        <div class="card-div">
+          <div class="card card21">
+            <div class="img"></div>
+            <div class="content">
+              <div class="content1">
+                <h3>Rs 8,999</h3>
+                <i class="ri-heart-3-line"></i>
+              </div>
+              <div class="content2"><h3>Tabs Fresh Branded Models Tablets ( Samsung , Huawei , Lenovo , Amazon</h3></div>
+              <div class="content3">
+                <h4>Johar Town Phase 1, Lahore</h4>
+                <p>2 days ago</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="card card22">
+            <div class="img"></div>
+            <div class="content">
+              <div class="content1">
+                <h3>Rs 18,999</h3>
+                <i class="ri-heart-3-line"></i>
+              </div>
+              <div class="content2"><h3>8" Tab 3GB RAM 32GB ROM box & 1 year warranty Cheap Tablets in Lahore</h3></div>
+              <div class="content3">
+                <h4>Jail Road, Lahore</h4>
+                <p>1 day ago</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="card card23">
+            <div class="img"></div>
+            <div class="content">
+              <div class="content1">
+                <h3>Rs 72,000</h3>
+                <i class="ri-heart-3-line"></i>
+              </div>
+              <div class="content2"><h3>Samsung tab s 6 lite 4/64</h3></div>
+              <div class="content3">
+                <h4>Mughalpura, Lahore</h4>
+                <p>3 days ago</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="card card24">
+            <div class="img"></div>
+            <div class="content">
+              <div class="content1">
+                <h3>Rs 7,500</h3>
+                <i class="ri-heart-3-line"></i>
+              </div>
+              <div class="content2"><h3>Amazon Tablet Fire 7/8/10 Inches call me</h3></div>
+              <div class="content3">
+                <h4>Surjani Town, Karachi</h4>
+                <p>4 weeks ago</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="card-head">
+        <h1>Land & Plots</h1>
+      </div>
+      <div class="card-section">
+        <div class="card-div">
+          <div class="card card25">
+            <div class="img"></div>
+            <div class="content">
+              <div class="content1">
+                <h3>Rs 11,000,000</h3>
+                <i class="ri-heart-3-line"></i>
+              </div>
+              <div class="content2"><h3>50ft Road 35x70 plot near markaz for sale in B-17 block F</h3></div>
+              <div class="content3">
+                <h4>MPCHS - Block F, Islamabad</h4>
+                <p>4 weeks ago</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="card card26">
+            <div class="img"></div>
+            <div class="content">
+              <div class="content1">
+                <h3>Rs 33,000,000</h3>
+                <i class="ri-heart-3-line"></i>
+              </div>
+              <div class="content2"><h3>AGOCHS-ii Pair Plots Possession Top Hight Back Open</h3></div>
+              <div class="content3">
+                <h4>AGHOSH Phase 2, Islamabad</h4>
+                <p>1 week ago</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="card card27">
+            <div class="img"></div>
+            <div class="content">
+              <div class="content1">
+                <h3>Rs 8,600,000</h3>
+                <i class="ri-heart-3-line"></i>
+              </div>
+              <div class="content2"><h3>8 Marla Residential Plot For sale In Audit & Accounts Phase 1</h3></div>
+              <div class="content3">
+                <h4>Audit & Accounts Phase 1, Lahore</h4>
+                <p>1 week ago</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="card card28">
+            <div class="img"></div>
+            <div class="content">
+              <div class="content1">
+                <h3>Rs 1,550,000</h3>
+                <i class="ri-heart-3-line"></i>
+              </div>
+              <div class="content2"><h3>P & D Phase 2 is a LDA Approved Housing Society</h3></div>
+              <div class="content3">
+                <h4>P & D Housing Society - Phase 2, Lahore</h4>
+                <p>1 week ago</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="card-head">
+        <h1>Jobs</h1>
+      </div>
+      <div class="card-section">
+        <div class="card-div">
+          <div class="card card29">
+            <div class="img"></div>
+            <div class="content">
+              <!-- <div class="content1">
+                <h3>Rs 11,000,000</h3>
+                <i class="ri-heart-3-line"></i>
+              </div> -->
+              <div class="content2"><h3>inbound sales</h3>
+                <i class="ri-heart-3-line"></i>
+              </div>
+              <div class="content3">
+                <h4>Gulberg 3, Lahore</h4>
+                <p>2 weeks ago</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="card card30">
+            <div class="img"></div>
+            <div class="content">
+              <!-- <div class="content1">
+                <h3>Rs 33,000,000</h3>
+                <i class="ri-heart-3-line"></i>
+              </div> -->
+              <div class="content2"><h3>Job/Jobs /Jobs in Saudi Arabia / visa /Job Available /Staff Saudia</h3>
+                <i class="ri-heart-3-line"></i>
+              </div>
+              <div class="content3">
+                <h4>Garden Town, Sheikhüpura</h4>
+                <p>2 weeks ago</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="card card31">
+            <div class="img"></div>
+            <div class="content">
+              <!-- <div class="content1">
+                <h3>Rs 8,600,000</h3>
+                <i class="ri-heart-3-line"></i>
+              </div> -->
+              <div class="content2"><h3>Jobs in Saudia, Full Time Jobs, Work Visa Available , Offers Available</h3>
+                <i class="ri-heart-3-line"></i>
+              </div>
+              <div class="content3">
+                <h4>Aminpur Bazar, Faisalabad</h4>
+                <p>2 weeks ago</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="card card32">
+            <div class="img"></div>
+            <div class="content">
+              <!-- <div class="content1">
+                <h3>Rs 1,550,000</h3>
+              </div> -->
+              <div class="content2"><h3>Part time/ Full time/ Home Based Jobs for males females</h3>
+                <i class="ri-heart-3-line"></i>
+              </div>
+              <div class="content3">
+                <h4>Others, Gujranwala</h4>
+                <p>4 weeks ago</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      
+      <div id="bottom">
+        <div class="bottom1 bottom">
+          <img src="bottom-image.webp" alt="">
+        </div>
+        <div class="bottom2 bottom">
+          <div class="bottom-inner">
+            <h1>TRY THE OLX APP</h1>
+          <p>Buy, sell and find just about anything using the app on your mobile.</p>
+          </div>
+        </div>
+        <div class="bottom3 bottom">
+          <div id="hding">
+          <h2>GET YOUR APP TODAY</h2>
+          </div>
+          <div class="bottom-img">
+            <img src="./button1.svg" alt="">
+            <img src="./button2.svg" alt="">
+            <img src="./button3.svg" alt="">
+          </div>
+        </div>
+      </div>
+
+      <div id="footer">
+        <div id="list">
+          <ul>
+            <h3>POPULAR CATEGORIES</h3>
+            <li><a href="">Cars</a></li>
+            <li><a href="">Flats for rent</a></li>
+            <li><a href="">Mobile Phones</a></li>
+            <li><a href="">Jobs</a></li>
+          </ul>
+          <ul>
+            <h3>Trending Searches</h3>
+            <li><a href="">Bikes</a></li>
+            <li><a href="">Watches</a></li>
+            <li><a href="">Books</a></li>
+            <li><a href="">Dogs</a></li>
+          </ul>
+          <ul>
+            <h3>About us</h3>
+            <li><a href="">About Dubizzle Group</a></li>
+            <li><a href="">OLX Blog</a></li>
+            <li><a href="">Contact Us</a></li>
+            <li><a href="">OLX for Businesses</a></li>
+          </ul>
+          <ul>
+            <h3>olx</h3>
+            <li><a href="">Help</a></li>
+            <li><a href="">Sitemap</a></li>
+            <li><a href="">Terms of use</a></li>
+            <li><a href="">Privacy Policy</a></li>
+          </ul>
+        </div>
+        <div id="follow">
+          <h3>FOLLOW US</h3>
+          <div class="top">
+            <a href=""><img src="link1.svg" alt=""></a>
+            <a href=""><img src="link2.svg" alt=""></a>
+            <a href=""><img src="link3.svg" alt=""></a>
+            <a href=""><img src="link4.svg" alt=""></a>
+          </div>
+          <div class="bottom">
+            <img src="./button1.svg" alt="">
+            <img src="./button2.svg" alt="">
+            <img src="./button3.svg" alt="">
+          </div>
+        </div>
+      </div>
+
+      <div id="last">
+        <p>Free Classifieds in Pakistan <span>. © 2006-2023 OLX</span></p>
+      </div>
+
+
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
